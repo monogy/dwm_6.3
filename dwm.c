@@ -516,7 +516,7 @@ buttonpress(XEvent *e)
 		/* else if (ev->x > selmon->ww - statusw) { */
 		/* 2px right padding */
 		/* else if (ev->x > selmon->ww - TEXTW(stext) + lrpad - 2) */
-		else if (ev->x > selmon->ww - statusw + lrpad - 2) {
+		else if (ev->x > selmon->ww - TEXTW(stext) + lrpad - 2) {
 
 			x = selmon->ww - statusw;
 			click = ClkStatusText;
